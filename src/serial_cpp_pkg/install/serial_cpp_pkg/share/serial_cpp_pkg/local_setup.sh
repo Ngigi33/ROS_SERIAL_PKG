@@ -1,0 +1,1 @@
+/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/build/serial_cpp_pkg/ament_cmake_environment_hooks/local_setup.sh

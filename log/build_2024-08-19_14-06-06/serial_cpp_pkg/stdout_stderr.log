@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target Serial_node_3[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/Serial_node_3.dir/src/serial_node.cpp.o[0m
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/serial_node.cpp:[m[K In constructor ‘[01m[KSerial_Class::Serial_Class()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/serial_node.cpp:28:7:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Serial_Class::msgCallback()[m[K’
+   28 |       [01;31m[KmsgCallback[m[K;
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/serial_node.cpp:109:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  109 |   void [01;36m[KmsgCallback[m[K()
+      |        [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Serial_node_3.dir/build.make:76: CMakeFiles/Serial_node_3.dir/src/serial_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/Serial_node_3.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

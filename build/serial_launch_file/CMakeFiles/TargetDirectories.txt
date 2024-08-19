@@ -1,0 +1,9 @@
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/uninstall.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/serial_launch_file_uninstall.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/test.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/edit_cache.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/rebuild_cache.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/list_install_components.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/install.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/install/local.dir
+/home/einstein/Documents/serial_ws/build/serial_launch_file/CMakeFiles/install/strip.dir

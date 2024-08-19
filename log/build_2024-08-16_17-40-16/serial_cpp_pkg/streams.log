@@ -1,0 +1,65 @@
+[0.008s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/einstein/Documents/serial_ws/src/serial_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/einstein/Documents/serial_ws/install/serial_cpp_pkg
+[0.048s] -- The C compiler identification is GNU 11.4.0
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting C compiler ABI info
+[0.156s] -- Detecting C compiler ABI info - done
+[0.162s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.163s] -- Detecting C compile features
+[0.163s] -- Detecting C compile features - done
+[0.165s] -- Detecting CXX compiler ABI info
+[0.237s] -- Detecting CXX compiler ABI info - done
+[0.242s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.243s] -- Detecting CXX compile features
+[0.243s] -- Detecting CXX compile features - done
+[0.249s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.365s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.435s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.457s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.460s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.465s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.482s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.509s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.510s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.568s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.586s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.614s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.619s] -- Looking for pthread.h
+[0.676s] -- Looking for pthread.h - found
+[0.676s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.734s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.735s] -- Found Threads: TRUE  
+[0.768s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.795s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.806s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.807s] -- Checking for module 'libserial'
+[0.817s] --   Found libserial, version 1.0.0
+[0.891s] -- Configuring done
+[0.897s] -- Generating done
+[0.899s] -- Build files have been written to: /home/einstein/Documents/serial_ws/build/serial_cpp_pkg
+[0.906s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/einstein/Documents/serial_ws/src/serial_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/einstein/Documents/serial_ws/install/serial_cpp_pkg
+[0.907s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[0.944s] [ 50%] [32mBuilding CXX object CMakeFiles/Serial_node_1.dir/src/serial_node.cpp.o[0m
+[7.038s] [100%] [32m[1mLinking CXX executable Serial_node_1[0m
+[7.324s] [100%] Built target Serial_node_1
+[7.341s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[7.365s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg
+[7.372s] -- Install configuration: ""
+[7.372s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Serial_node_1
+[7.375s] -- Set runtime path of "/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Serial_node_1" to ""
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/serial_cpp_pkg
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/serial_cpp_pkg
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.sh
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.dsv
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.sh
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.dsv
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.bash
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.sh
+[7.375s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.zsh
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.dsv
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.dsv
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/packages/serial_cpp_pkg
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig.cmake
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig-version.cmake
+[7.376s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.xml
+[7.378s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg

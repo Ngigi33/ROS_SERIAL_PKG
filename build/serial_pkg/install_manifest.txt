@@ -1,0 +1,15 @@
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/ament_index/resource_index/package_run_dependencies/serial_pkg
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/ament_index/resource_index/parent_prefix_path/serial_pkg
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/environment/ament_prefix_path.sh
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/environment/ament_prefix_path.dsv
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/environment/path.sh
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/environment/path.dsv
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/local_setup.bash
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/local_setup.sh
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/local_setup.zsh
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/local_setup.dsv
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/package.dsv
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/ament_index/resource_index/packages/serial_pkg
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/cmake/serial_pkgConfig.cmake
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/cmake/serial_pkgConfig-version.cmake
+/home/einstein/Documents/serial_ws/install/serial_pkg/share/serial_pkg/package.xml

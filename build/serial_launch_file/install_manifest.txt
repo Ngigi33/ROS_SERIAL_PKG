@@ -1,0 +1,16 @@
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/launch/serial_launch.launch.py
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/package_run_dependencies/serial_launch_file
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/parent_prefix_path/serial_launch_file
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.sh
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.dsv
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.sh
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.dsv
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.bash
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.sh
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.zsh
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.dsv
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.dsv
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/packages/serial_launch_file
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig.cmake
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig-version.cmake
+/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.xml
