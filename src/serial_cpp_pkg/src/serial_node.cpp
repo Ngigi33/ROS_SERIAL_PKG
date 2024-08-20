@@ -60,7 +60,7 @@ private:
          7th bit  -> Motor A direction
          8th bit  -> Motor B direction
          */
-      int speed = 170170;
+      int speed = 130130;
       // std::string vel = "120120";
       std::string vel = std::to_string(speed);
       std::string data_to_send = vel;
@@ -70,7 +70,7 @@ private:
 
     else if ((data->linear.x) < 0.0) // Moving Backward
     {
-      int speed = 270270;
+      int speed = 230230;
       // std::string vel = "12012011";
       std::string vel = std::to_string(speed);
       std::string data_to_send = vel;
@@ -79,7 +79,7 @@ private:
     }
     else if ((data->angular.z) < 0.0) // Moving to Right
     {
-      int speed = 170270;
+      int speed = 130230;
       // std::string vel = "12012001";
       std::string vel = std::to_string(speed);
       std::string data_to_send = vel;
@@ -88,7 +88,7 @@ private:
     }
     else if ((data->angular.z) > 0.0) // Moving to Left
     {
-      int speed = 270170;
+      int speed = 230130;
       // std::string vel = "12012010";
       std::string vel = std::to_string(speed);
       std::string data_to_send = vel;
