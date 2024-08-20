@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+[0.037s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+[0.061s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file
+[0.067s] -- Install configuration: ""
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/launch
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/launch/serial_launch.launch.py
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/package_run_dependencies/serial_launch_file
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/parent_prefix_path/serial_launch_file
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.sh
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.dsv
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.sh
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.dsv
+[0.067s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.bash
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.sh
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.zsh
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.dsv
+[0.068s] -- Installing: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.dsv
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/packages/serial_launch_file
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig.cmake
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig-version.cmake
+[0.068s] -- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.xml
+[0.069s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file

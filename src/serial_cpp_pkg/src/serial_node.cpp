@@ -21,7 +21,11 @@ public:
       RCLCPP_INFO(this->get_logger(), "PORT IS OPEN");
     }
 
+    subscriber_ = this->create_subscription<geometry_msgs::msg::Twist>(
+        "/cmd_vel", 1, std::bind(&Serial_Class::send_msg_callback, this, std::placeholders::_1));
+
     stm_.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
+    wheel_odom_publisher_ = this->create_publisher<std_msgs::msg::String>("distance_finder", 1);
     timer_ = this->create_wall_timer(std::chrono::microseconds(1000), std::bind(&Serial_Class::msgCallback, this));
 
     // subscriber_ = this->create_subscription<geometry_msgs::msg::Twist>(
@@ -38,7 +42,7 @@ public:
 private:
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber_;
   std::string port_;
-  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr wheel_odom_publisher_;
   rclcpp::TimerBase::SharedPtr timer_;
   LibSerial::SerialPort stm_;
 
@@ -102,6 +106,11 @@ private:
     }
   }
 
+  void publish_Odom(const std_msgs::msg::String Data_)
+  {
+    wheel_odom_publisher_->publish(Data_);
+  }
+
   void msgCallback()
   {
 
@@ -110,9 +119,8 @@ private:
     {
       stm_.ReadLine(message.data);
       RCLCPP_INFO_STREAM(this->get_logger(), "MSG received from Stm:" << message.data);
+      publish_Odom(message);
     }
-    subscriber_ = this->create_subscription<geometry_msgs::msg::Twist>(
-        "/cmd_vel", 1, std::bind(&Serial_Class::send_msg_callback, this, std::placeholders::_1));
   }
 };
 

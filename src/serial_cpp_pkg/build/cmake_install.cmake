@@ -43,21 +43,41 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg" TYPE EXECUTABLE FILES "/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/build/Serial_node_3")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg" TYPE EXECUTABLE FILES "/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/build/Serial_node_1")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1"
          OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_3")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Serial_node_1")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg" TYPE EXECUTABLE FILES "/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/build/Distance_Calculator")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/serial_cpp_pkg/Distance_Calculator")
     endif()
   endif()
 endif()

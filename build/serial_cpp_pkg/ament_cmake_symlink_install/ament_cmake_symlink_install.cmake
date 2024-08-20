@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "Serial_node_3" "DESTINATION" "lib/serial_cpp_pkg")
+# install("TARGETS" "Serial_node_1" "Distance_Calculator" "DESTINATION" "lib/serial_cpp_pkg")
 include("/home/einstein/Documents/serial_ws/build/serial_cpp_pkg/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/einstein/Documents/serial_ws/build/serial_cpp_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial_cpp_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

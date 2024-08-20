@@ -198,24 +198,61 @@ serial_cpp_pkg_uninstall/fast:
 .PHONY : serial_cpp_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named Serial_node_3
+# Target rules for targets named Serial_node_1
 
 # Build rule for target.
-Serial_node_3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Serial_node_3
-.PHONY : Serial_node_3
+Serial_node_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Serial_node_1
+.PHONY : Serial_node_1
 
 # fast build rule for target.
-Serial_node_3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_3.dir/build.make CMakeFiles/Serial_node_3.dir/build
-.PHONY : Serial_node_3/fast
+Serial_node_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_1.dir/build.make CMakeFiles/Serial_node_1.dir/build
+.PHONY : Serial_node_1/fast
+
+#=============================================================================
+# Target rules for targets named Distance_Calculator
+
+# Build rule for target.
+Distance_Calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Distance_Calculator
+.PHONY : Distance_Calculator
+
+# fast build rule for target.
+Distance_Calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/build
+.PHONY : Distance_Calculator/fast
+
+src/distance_Calculator.o: src/distance_Calculator.cpp.o
+.PHONY : src/distance_Calculator.o
+
+# target to build an object file
+src/distance_Calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o
+.PHONY : src/distance_Calculator.cpp.o
+
+src/distance_Calculator.i: src/distance_Calculator.cpp.i
+.PHONY : src/distance_Calculator.i
+
+# target to preprocess a source file
+src/distance_Calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.i
+.PHONY : src/distance_Calculator.cpp.i
+
+src/distance_Calculator.s: src/distance_Calculator.cpp.s
+.PHONY : src/distance_Calculator.s
+
+# target to generate assembly for a file
+src/distance_Calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.s
+.PHONY : src/distance_Calculator.cpp.s
 
 src/serial_node.o: src/serial_node.cpp.o
 .PHONY : src/serial_node.o
 
 # target to build an object file
 src/serial_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_3.dir/build.make CMakeFiles/Serial_node_3.dir/src/serial_node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_1.dir/build.make CMakeFiles/Serial_node_1.dir/src/serial_node.cpp.o
 .PHONY : src/serial_node.cpp.o
 
 src/serial_node.i: src/serial_node.cpp.i
@@ -223,7 +260,7 @@ src/serial_node.i: src/serial_node.cpp.i
 
 # target to preprocess a source file
 src/serial_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_3.dir/build.make CMakeFiles/Serial_node_3.dir/src/serial_node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_1.dir/build.make CMakeFiles/Serial_node_1.dir/src/serial_node.cpp.i
 .PHONY : src/serial_node.cpp.i
 
 src/serial_node.s: src/serial_node.cpp.s
@@ -231,7 +268,7 @@ src/serial_node.s: src/serial_node.cpp.s
 
 # target to generate assembly for a file
 src/serial_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_3.dir/build.make CMakeFiles/Serial_node_3.dir/src/serial_node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Serial_node_1.dir/build.make CMakeFiles/Serial_node_1.dir/src/serial_node.cpp.s
 .PHONY : src/serial_node.cpp.s
 
 # Help Target
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... serial_cpp_pkg_uninstall"
 	@echo "... uninstall"
-	@echo "... Serial_node_3"
+	@echo "... Distance_Calculator"
+	@echo "... Serial_node_1"
+	@echo "... src/distance_Calculator.o"
+	@echo "... src/distance_Calculator.i"
+	@echo "... src/distance_Calculator.s"
 	@echo "... src/serial_node.o"
 	@echo "... src/serial_node.i"
 	@echo "... src/serial_node.s"

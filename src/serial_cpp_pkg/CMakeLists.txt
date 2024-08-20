@@ -24,12 +24,18 @@ pkg_check_modules(SERIAL libserial)
 
 include_directories(include)
 
-add_executable(Serial_node_3 src/serial_node.cpp)
-ament_target_dependencies(Serial_node_3 rclcpp)
-ament_target_dependencies(Serial_node_3 rclcpp std_msgs)
-ament_target_dependencies(Serial_node_3 rclcpp geometry_msgs)
-target_include_directories(Serial_node_3 PUBLIC "${SERIAL_INCLUDE_DIRS}")
-target_link_libraries(Serial_node_3 "${SERIAL_LDFLAGS}")
+add_executable(Serial_node_1 src/serial_node.cpp)
+ament_target_dependencies(Serial_node_1 rclcpp)
+ament_target_dependencies(Serial_node_1 rclcpp std_msgs)
+ament_target_dependencies(Serial_node_1 rclcpp geometry_msgs)
+target_include_directories(Serial_node_1 PUBLIC "${SERIAL_INCLUDE_DIRS}")
+target_link_libraries(Serial_node_1 "${SERIAL_LDFLAGS}")
+
+add_executable(Distance_Calculator src/distance_Calculator.cpp)
+ament_target_dependencies(Distance_Calculator rclcpp)
+ament_target_dependencies(Distance_Calculator rclcpp std_msgs)
+ament_target_dependencies(Distance_Calculator rclcpp example_interfaces)
+
 
 
 
@@ -54,7 +60,8 @@ target_link_libraries(Serial_node_3 "${SERIAL_LDFLAGS}")
 # target_link_libraries(simple_serial_transmitter PRIVATE ${LIBSERIAL_LIBRARY})
 
 install(TARGETS
-Serial_node_3
+Serial_node_1
+Distance_Calculator
 DESTINATION lib/${PROJECT_NAME}
 )
 
