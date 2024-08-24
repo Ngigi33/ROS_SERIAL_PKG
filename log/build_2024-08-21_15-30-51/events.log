@@ -1,0 +1,201 @@
+[0.000000] (-) TimerEvent: {}
+[0.000454] (serial_cpp_pkg) JobQueued: {'identifier': 'serial_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000504] (serial_launch_file) JobQueued: {'identifier': 'serial_launch_file', 'dependencies': OrderedDict()}
+[0.000518] (serial_cpp_pkg) JobStarted: {'identifier': 'serial_cpp_pkg'}
+[0.023370] (serial_launch_file) JobStarted: {'identifier': 'serial_launch_file'}
+[0.041065] (serial_cpp_pkg) JobProgress: {'identifier': 'serial_cpp_pkg', 'progress': 'cmake'}
+[0.053109] (serial_cpp_pkg) JobProgress: {'identifier': 'serial_cpp_pkg', 'progress': 'build'}
+[0.053679] (serial_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg', '--', '-j8', '-l8'], 'cwd': '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'einstein'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/einstein'), ('OLDPWD', '/home/einstein'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1390'), ('SYSTEMD_EXEC_PID', '1566'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2193'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/einstein/Documents/gamepad_ws/install:/home/einstein/Documents/SLAM_WS/install:/home/einstein/Documents/serial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'einstein'), ('JOURNAL_STREAM', '8:15423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'einstein'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/einstein-dgon:@/tmp/.ICE-unix/1536,unix/einstein-dgon:/tmp/.ICE-unix/1536'), ('INVOCATION_ID', '4759da2ec0b148a5ab0e4d146ef992d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sw_KE'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'sw_KE'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3EV7S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:14e18d77-930d-480c-a9a6-80d9aaf3b16e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'sw_KE'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble')]), 'shell': False}
+[0.079528] (serial_launch_file) JobProgress: {'identifier': 'serial_launch_file', 'progress': 'cmake'}
+[0.084510] (serial_launch_file) JobProgress: {'identifier': 'serial_launch_file', 'progress': 'build'}
+[0.084770] (serial_launch_file) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/einstein/Documents/serial_ws/build/serial_launch_file', '--', '-j8', '-l8'], 'cwd': '/home/einstein/Documents/serial_ws/build/serial_launch_file', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'einstein'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/einstein'), ('OLDPWD', '/home/einstein'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1390'), ('SYSTEMD_EXEC_PID', '1566'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2193'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/einstein/Documents/gamepad_ws/install:/home/einstein/Documents/SLAM_WS/install:/home/einstein/Documents/serial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'einstein'), ('JOURNAL_STREAM', '8:15423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'einstein'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/einstein-dgon:@/tmp/.ICE-unix/1536,unix/einstein-dgon:/tmp/.ICE-unix/1536'), ('INVOCATION_ID', '4759da2ec0b148a5ab0e4d146ef992d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sw_KE'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'sw_KE'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3EV7S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:14e18d77-930d-480c-a9a6-80d9aaf3b16e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'sw_KE'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/einstein/Documents/serial_ws/build/serial_launch_file'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099846] (-) TimerEvent: {}
+[0.200068] (-) TimerEvent: {}
+[0.300258] (-) TimerEvent: {}
+[0.361941] (serial_launch_file) CommandEnded: {'returncode': 0}
+[0.377092] (serial_launch_file) JobProgress: {'identifier': 'serial_launch_file', 'progress': 'install'}
+[0.383315] (serial_launch_file) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/einstein/Documents/serial_ws/build/serial_launch_file'], 'cwd': '/home/einstein/Documents/serial_ws/build/serial_launch_file', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'einstein'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/einstein'), ('OLDPWD', '/home/einstein'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1390'), ('SYSTEMD_EXEC_PID', '1566'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2193'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/einstein/Documents/gamepad_ws/install:/home/einstein/Documents/SLAM_WS/install:/home/einstein/Documents/serial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'einstein'), ('JOURNAL_STREAM', '8:15423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'einstein'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/einstein-dgon:@/tmp/.ICE-unix/1536,unix/einstein-dgon:/tmp/.ICE-unix/1536'), ('INVOCATION_ID', '4759da2ec0b148a5ab0e4d146ef992d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sw_KE'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'sw_KE'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3EV7S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:14e18d77-930d-480c-a9a6-80d9aaf3b16e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'sw_KE'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/einstein/Documents/serial_ws/build/serial_launch_file'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble')]), 'shell': False}
+[0.395445] (serial_launch_file) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.397568] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/launch\n'}
+[0.400311] (-) TimerEvent: {}
+[0.406429] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/launch/serial_launch.launch.py\n'}
+[0.406648] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/package_run_dependencies/serial_launch_file\n'}
+[0.406827] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/parent_prefix_path/serial_launch_file\n'}
+[0.406989] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.sh\n'}
+[0.407170] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/ament_prefix_path.dsv\n'}
+[0.407340] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.sh\n'}
+[0.407495] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/environment/path.dsv\n'}
+[0.407621] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.bash\n'}
+[0.407746] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.sh\n'}
+[0.407906] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.zsh\n'}
+[0.408062] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/local_setup.dsv\n'}
+[0.408153] (serial_launch_file) StdoutLine: {'line': b'-- Installing: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.dsv\n'}
+[0.421177] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/ament_index/resource_index/packages/serial_launch_file\n'}
+[0.421810] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig.cmake\n'}
+[0.422050] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/cmake/serial_launch_fileConfig-version.cmake\n'}
+[0.422251] (serial_launch_file) StdoutLine: {'line': b'-- Up-to-date: /home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.xml\n'}
+[0.424704] (serial_launch_file) CommandEnded: {'returncode': 0}
+[0.426704] (serial_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Serial_node_1\x1b[0m\n'}
+[0.500497] (-) TimerEvent: {}
+[0.501354] (serial_launch_file) JobEnded: {'identifier': 'serial_launch_file', 'rc': 0}
+[0.529576] (serial_cpp_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o\x1b[0m\n'}
+[0.530051] (serial_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target Serial_node_1\n'}
+[0.600630] (-) TimerEvent: {}
+[0.701095] (-) TimerEvent: {}
+[0.801634] (-) TimerEvent: {}
+[0.902125] (-) TimerEvent: {}
+[1.002667] (-) TimerEvent: {}
+[1.103176] (-) TimerEvent: {}
+[1.203729] (-) TimerEvent: {}
+[1.304243] (-) TimerEvent: {}
+[1.404598] (-) TimerEvent: {}
+[1.504912] (-) TimerEvent: {}
+[1.605468] (-) TimerEvent: {}
+[1.705998] (-) TimerEvent: {}
+[1.806527] (-) TimerEvent: {}
+[1.907083] (-) TimerEvent: {}
+[2.007651] (-) TimerEvent: {}
+[2.108181] (-) TimerEvent: {}
+[2.208778] (-) TimerEvent: {}
+[2.309315] (-) TimerEvent: {}
+[2.409743] (-) TimerEvent: {}
+[2.510294] (-) TimerEvent: {}
+[2.610774] (-) TimerEvent: {}
+[2.711376] (-) TimerEvent: {}
+[2.811793] (-) TimerEvent: {}
+[2.912384] (-) TimerEvent: {}
+[3.012910] (-) TimerEvent: {}
+[3.113477] (-) TimerEvent: {}
+[3.213974] (-) TimerEvent: {}
+[3.314590] (-) TimerEvent: {}
+[3.415019] (-) TimerEvent: {}
+[3.515546] (-) TimerEvent: {}
+[3.615995] (-) TimerEvent: {}
+[3.716608] (-) TimerEvent: {}
+[3.817148] (-) TimerEvent: {}
+[3.917689] (-) TimerEvent: {}
+[4.018282] (-) TimerEvent: {}
+[4.118845] (-) TimerEvent: {}
+[4.219381] (-) TimerEvent: {}
+[4.328287] (-) TimerEvent: {}
+[4.428812] (-) TimerEvent: {}
+[4.529324] (-) TimerEvent: {}
+[4.629903] (-) TimerEvent: {}
+[4.730463] (-) TimerEvent: {}
+[4.830997] (-) TimerEvent: {}
+[4.931425] (-) TimerEvent: {}
+[5.031956] (-) TimerEvent: {}
+[5.132538] (-) TimerEvent: {}
+[5.232981] (-) TimerEvent: {}
+[5.333413] (-) TimerEvent: {}
+[5.433932] (-) TimerEvent: {}
+[5.534521] (-) TimerEvent: {}
+[5.634994] (-) TimerEvent: {}
+[5.735591] (-) TimerEvent: {}
+[5.836107] (-) TimerEvent: {}
+[5.936708] (-) TimerEvent: {}
+[6.037249] (-) TimerEvent: {}
+[6.137779] (-) TimerEvent: {}
+[6.238305] (-) TimerEvent: {}
+[6.338836] (-) TimerEvent: {}
+[6.439323] (-) TimerEvent: {}
+[6.539812] (-) TimerEvent: {}
+[6.640284] (-) TimerEvent: {}
+[6.740746] (-) TimerEvent: {}
+[6.841169] (-) TimerEvent: {}
+[6.941665] (-) TimerEvent: {}
+[7.042019] (-) TimerEvent: {}
+[7.142397] (-) TimerEvent: {}
+[7.242727] (-) TimerEvent: {}
+[7.343078] (-) TimerEvent: {}
+[7.443436] (-) TimerEvent: {}
+[7.543784] (-) TimerEvent: {}
+[7.644032] (-) TimerEvent: {}
+[7.744381] (-) TimerEvent: {}
+[7.844661] (-) TimerEvent: {}
+[7.944934] (-) TimerEvent: {}
+[8.045277] (-) TimerEvent: {}
+[8.145612] (-) TimerEvent: {}
+[8.245959] (-) TimerEvent: {}
+[8.346314] (-) TimerEvent: {}
+[8.446586] (-) TimerEvent: {}
+[8.546919] (-) TimerEvent: {}
+[8.647258] (-) TimerEvent: {}
+[8.747597] (-) TimerEvent: {}
+[8.847951] (-) TimerEvent: {}
+[8.948317] (-) TimerEvent: {}
+[9.048666] (-) TimerEvent: {}
+[9.149019] (-) TimerEvent: {}
+[9.249374] (-) TimerEvent: {}
+[9.349633] (-) TimerEvent: {}
+[9.449897] (-) TimerEvent: {}
+[9.550176] (-) TimerEvent: {}
+[9.650542] (-) TimerEvent: {}
+[9.750883] (-) TimerEvent: {}
+[9.851247] (-) TimerEvent: {}
+[9.951514] (-) TimerEvent: {}
+[10.051832] (-) TimerEvent: {}
+[10.152173] (-) TimerEvent: {}
+[10.252548] (-) TimerEvent: {}
+[10.352912] (-) TimerEvent: {}
+[10.453301] (-) TimerEvent: {}
+[10.553562] (-) TimerEvent: {}
+[10.653825] (-) TimerEvent: {}
+[10.754174] (-) TimerEvent: {}
+[10.854525] (-) TimerEvent: {}
+[10.954775] (-) TimerEvent: {}
+[11.055014] (-) TimerEvent: {}
+[11.155251] (-) TimerEvent: {}
+[11.255496] (-) TimerEvent: {}
+[11.355740] (-) TimerEvent: {}
+[11.456075] (-) TimerEvent: {}
+[11.556413] (-) TimerEvent: {}
+[11.656740] (-) TimerEvent: {}
+[11.837374] (-) TimerEvent: {}
+[11.937628] (-) TimerEvent: {}
+[12.037879] (-) TimerEvent: {}
+[12.138131] (-) TimerEvent: {}
+[12.238399] (-) TimerEvent: {}
+[12.338692] (-) TimerEvent: {}
+[12.438982] (-) TimerEvent: {}
+[12.539348] (-) TimerEvent: {}
+[12.639648] (-) TimerEvent: {}
+[12.740010] (-) TimerEvent: {}
+[12.840327] (-) TimerEvent: {}
+[12.940677] (-) TimerEvent: {}
+[13.040966] (-) TimerEvent: {}
+[13.141322] (-) TimerEvent: {}
+[13.216903] (serial_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable Distance_Calculator\x1b[0m\n'}
+[13.241412] (-) TimerEvent: {}
+[13.341777] (-) TimerEvent: {}
+[13.442147] (-) TimerEvent: {}
+[13.542502] (-) TimerEvent: {}
+[13.642823] (-) TimerEvent: {}
+[13.743084] (-) TimerEvent: {}
+[13.781759] (serial_cpp_pkg) StdoutLine: {'line': b'[100%] Built target Distance_Calculator\n'}
+[13.789564] (serial_cpp_pkg) CommandEnded: {'returncode': 0}
+[13.807548] (serial_cpp_pkg) JobProgress: {'identifier': 'serial_cpp_pkg', 'progress': 'install'}
+[13.807761] (serial_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg'], 'cwd': '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'einstein'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/einstein'), ('OLDPWD', '/home/einstein'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1390'), ('SYSTEMD_EXEC_PID', '1566'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2193'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/einstein/Documents/gamepad_ws/install:/home/einstein/Documents/SLAM_WS/install:/home/einstein/Documents/serial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'einstein'), ('JOURNAL_STREAM', '8:15423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'einstein'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/einstein-dgon:@/tmp/.ICE-unix/1536,unix/einstein-dgon:/tmp/.ICE-unix/1536'), ('INVOCATION_ID', '4759da2ec0b148a5ab0e4d146ef992d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sw_KE'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'sw_KE'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3EV7S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:14e18d77-930d-480c-a9a6-80d9aaf3b16e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'sw_KE'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/einstein/Documents/serial_ws/install/serial_launch_file:/home/einstein/Documents/serial_ws/install/serial_cpp_pkg:/home/einstein/Documents/gamepad_ws/install/gamepad_bringup:/home/einstein/Documents/SLAM_WS/install/slambot_description:/home/einstein/Documents/SLAM_WS/install/cpp_code_pkg:/opt/ros/humble')]), 'shell': False}
+[13.817906] (serial_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.821918] (serial_cpp_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.824105] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Serial_node_1\n'}
+[13.824620] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Distance_Calculator\n'}
+[13.824708] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/serial_cpp_pkg\n'}
+[13.825838] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/serial_cpp_pkg\n'}
+[13.826309] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[13.826395] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[13.826814] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.sh\n'}
+[13.826869] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.dsv\n'}
+[13.827670] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.bash\n'}
+[13.828216] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.sh\n'}
+[13.828732] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.zsh\n'}
+[13.828816] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.dsv\n'}
+[13.828860] (serial_cpp_pkg) StdoutLine: {'line': b'-- Symlinking: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.dsv\n'}
+[13.834892] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/packages/serial_cpp_pkg\n'}
+[13.837936] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig.cmake\n'}
+[13.838464] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig-version.cmake\n'}
+[13.838947] (serial_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.xml\n'}
+[13.840172] (serial_cpp_pkg) CommandEnded: {'returncode': 0}
+[13.843187] (-) TimerEvent: {}
+[13.866922] (serial_cpp_pkg) JobEnded: {'identifier': 'serial_cpp_pkg', 'rc': 0}
+[13.867376] (-) EventReactorShutdown: {}
