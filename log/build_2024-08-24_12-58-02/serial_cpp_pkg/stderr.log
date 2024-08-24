@@ -1,0 +1,4 @@
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In member function ‘[01m[Kvoid D_Calc::odom()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:241:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KcycleAngle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  241 |         double [01;35m[KcycleAngle[m[K = asin((distance_A - distance_B) / distance_btwn_wheels);
+      |                [01;35m[K^~~~~~~~~~[m[K

@@ -1,0 +1,87 @@
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   48 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr odom_data_pub;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:48:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   48 |     rclcpp::Publisher<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr odom_data_pub;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:48:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   48 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K odom_data_pub;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:48:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_data_pub[m[K’ does not name a type
+   48 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kodom_data_pub[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:49:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   49 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr odom_data_pub_quat;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:49:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |     rclcpp::Publisher<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr odom_data_pub_quat;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:49:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   49 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K odom_data_pub_quat;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:49:49:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint D_Calc::SharedPtr[m[K’
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:48:49:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint D_Calc::SharedPtr[m[K’
+   48 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;36m[KSharedPtr[m[K odom_data_pub;
+      |                                                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:49:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_data_pub_quat[m[K’ does not name a type
+   49 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kodom_data_pub_quat[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   50 |     [01;31m[Knav_msgs[m[K::msg::Odometry odomNew;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   51 |     [01;31m[Knav_msgs[m[K::msg::Odometry odomOld;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In constructor ‘[01m[KD_Calc::D_Calc()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[KodomNew[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+   27 |         [01;31m[KodomNew[m[K.header.frame_id = "odom";
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[KodomOld[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+   37 |         [01;31m[KodomOld[m[K.pose.pose.position.x = old_X;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In member function ‘[01m[Kvoid D_Calc::set_initial_2D()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:81:9:[m[K [01;31m[Kerror: [m[K‘[01m[KodomOld[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+   81 |         [01;31m[KodomOld[m[K.pose.pose.position.x = new_X;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In member function ‘[01m[Kvoid D_Calc::publish_Quaternion()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:111:24:[m[K [01;31m[Kerror: [m[K‘[01m[KodomNew[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+  111 |         q.setRPY(0, 0, [01;31m[KodomNew[m[K.pose.pose.orientation.z);
+      |                        [01;31m[K^~~~~~~[m[K
+      |                        [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:113:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ has not been declared
+  113 |         [01;31m[Knav_msgs[m[K::msg::Odometry quatOdom;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:114:9:[m[K [01;31m[Kerror: [m[K‘[01m[KquatOdom[m[K’ was not declared in this scope
+  114 |         [01;31m[KquatOdom[m[K.header.stamp = odomNew.header.stamp;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:147:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_data_pub_quat[m[K’ was not declared in this scope
+  147 |         [01;31m[Kodom_data_pub_quat[m[K->publish(quatOdom);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In member function ‘[01m[Kvoid D_Calc::update_odom()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:160:44:[m[K [01;31m[Kerror: [m[K‘[01m[KodomOld[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+  160 |         double avgAngle = cycleAngle / 2 + [01;31m[KodomOld[m[K.pose.pose.orientation.z;
+      |                                            [01;31m[K^~~~~~~[m[K
+      |                                            [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:175:9:[m[K [01;31m[Kerror: [m[K‘[01m[KodomNew[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+  175 |         [01;31m[KodomNew[m[K.pose.pose.position.x = odomOld.pose.pose.position.x + cos(avgAngle) * distance_Avg;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:212:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_data_pub[m[K’ was not declared in this scope
+  212 |         [01;31m[Kodom_data_pub[m[K->publish(odomNew);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:[m[K In member function ‘[01m[Kvoid D_Calc::odom()[m[K’:
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:240:44:[m[K [01;31m[Kerror: [m[K‘[01m[KodomOld[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom[m[K’?
+  240 |         double avgAngle = cycleAngle / 2 + [01;31m[KodomOld[m[K.pose.pose.orientation.z;
+      |                                            [01;31m[K^~~~~~~[m[K
+      |                                            [32m[Kodom[m[K
+[01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:240:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KavgAngle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  240 |         double [01;35m[KavgAngle[m[K = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
+      |                [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Distance_Calculator.dir/build.make:76: CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Distance_Calculator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

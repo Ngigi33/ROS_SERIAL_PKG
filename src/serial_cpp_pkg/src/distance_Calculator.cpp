@@ -6,10 +6,10 @@
 #include <string>
 #include <vector>
 
-#include "ros/ros.h"
-#include "std_msgs/Int16.h"
-#include <nav_msgs/Odometry.h>
-#include <geometry_msgs/PoseStamped.h>
+// #include "ros/ros.h"
+#include <std_msgs/msg/int16.hpp>
+#include <nav_msgs/msg/odometry.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_ros/transform_broadcaster.h>
 #include <cmath>
@@ -22,6 +22,28 @@ class D_Calc : public rclcpp::Node
 public:
     D_Calc() : Node("Distance_Calculator_Node") // Create a node with name stated
     {
+
+        // Set the data fields of the odometry message
+        odomNew.header.frame_id = "odom";
+        odomNew.pose.pose.position.z = 0;
+        odomNew.pose.pose.orientation.x = 0;
+        odomNew.pose.pose.orientation.y = 0;
+        odomNew.twist.twist.linear.x = 0;
+        odomNew.twist.twist.linear.y = 0;
+        odomNew.twist.twist.linear.z = 0;
+        odomNew.twist.twist.angular.x = 0;
+        odomNew.twist.twist.angular.y = 0;
+        odomNew.twist.twist.angular.z = 0;
+        odomOld.pose.pose.position.x = old_X;
+        odomOld.pose.pose.position.y = old_Y;
+        odomOld.pose.pose.orientation.z = old_Orientation;
+
+                // Publishers
+        odom_data_pub = this->create_publisher<nav_msgs::msg::Odometry>("odom_data_euler", 100);
+        odom_data_pub_quat = this->create_publisher<nav_msgs::msg::Odometry>("odom_data_quat", 100);
+
+
+
         wheel_odom_sub_ = this->create_subscription<std_msgs::msg::String>("/distance_finder", 1, std::bind(&D_Calc::receive_Msg, this, std::placeholders::_1));
         timer_ = this->create_wall_timer(std::chrono::microseconds(500), std::bind(&D_Calc::odom, this));
     }
@@ -29,14 +51,10 @@ public:
 private:
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr wheel_odom_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
-    float distance_btwn_wheels = 235.00;
-    float wheel_diameter = 85.00;
-
-    // Create odometry data publishers
-    ros::Publisher odom_data_pub;
-    ros::Publisher odom_data_pub_quat;
-    nav_msgs::Odometry odomNew;
-    nav_msgs::Odometry odomOld;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_data_pub;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_data_pub_quat;
+    nav_msgs::msg::Odometry odomNew;
+    nav_msgs::msg::Odometry odomOld;
 
     int rot_A;
     int rot_B;
@@ -44,6 +62,9 @@ private:
     double distance_A = 0.0;
     double distance_B = 0.0;
     double distance_Avg;
+
+    float distance_btwn_wheels = 235.00;
+    float wheel_diameter = 85.00;
 
     double delta_Orientation;
     double new_Orientation;
@@ -95,7 +116,7 @@ private:
 
         q.setRPY(0, 0, odomNew.pose.pose.orientation.z);
 
-        nav_msgs::Odometry quatOdom;
+        nav_msgs::msg::Odometry quatOdom;
         quatOdom.header.stamp = odomNew.header.stamp;
         quatOdom.header.frame_id = "odom";
         quatOdom.child_frame_id = "base_link";
@@ -129,7 +150,7 @@ private:
             }
         }
 
-        odom_data_pub_quat.publish(quatOdom);
+        odom_data_pub_quat->publish(quatOdom);
     }
 
     void update_odom()
@@ -143,6 +164,67 @@ private:
 
         // Average angle during the last cycle
         double avgAngle = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
+
+        if (avgAngle > PI)
+        {
+            avgAngle -= 2 * PI;
+        }
+        else if (avgAngle < -PI)
+        {
+            avgAngle += 2 * PI;
+        }
+      
+
+        // Calculate the new pose (x, y, and theta)
+        odomNew.pose.pose.position.x = odomOld.pose.pose.position.x + cos(avgAngle) * distance_Avg;
+        odomNew.pose.pose.position.y = odomOld.pose.pose.position.y + sin(avgAngle) * distance_Avg;
+        odomNew.pose.pose.orientation.z = cycleAngle + odomOld.pose.pose.orientation.z;
+
+        // Prevent lockup from a single bad cycle
+        if (std::isnan(odomNew.pose.pose.position.x) || std::isnan(odomNew.pose.pose.position.y) ||
+            std::isnan(odomNew.pose.pose.position.z))
+        {
+            odomNew.pose.pose.position.x = odomOld.pose.pose.position.x;
+            odomNew.pose.pose.position.y = odomOld.pose.pose.position.y;
+            odomNew.pose.pose.orientation.z = odomOld.pose.pose.orientation.z;
+        }
+
+        // Make sure theta stays in the correct range
+        if (odomNew.pose.pose.orientation.z > PI)
+        {
+            odomNew.pose.pose.orientation.z -= 2 * PI;
+        }
+        else if (odomNew.pose.pose.orientation.z < -PI)
+        {
+            odomNew.pose.pose.orientation.z += 2 * PI;
+        }
+        else
+        {
+        }
+
+        // Compute the velocity
+        odomNew.header.stamp = this->get_clock()->now();
+        odomNew.twist.twist.linear.x = distance_Avg / (odomNew.header.stamp.sec - odomOld.header.stamp.sec);
+        odomNew.twist.twist.angular.z = cycleAngle / (odomNew.header.stamp.sec - odomOld.header.stamp.sec);
+        // Save the pose data for the next cycle
+        odomOld.pose.pose.position.x = odomNew.pose.pose.position.x;
+        odomOld.pose.pose.position.y = odomNew.pose.pose.position.y;
+        odomOld.pose.pose.orientation.z = odomNew.pose.pose.orientation.z;
+        odomOld.header.stamp = odomNew.header.stamp;
+
+        // Publish the odometry message
+        odom_data_pub->publish(odomNew);
+    }
+
+    void timer_callback()
+    {
+
+        if (initialPoseRecieved)
+        {
+
+            update_odom();
+            publish_Quaternion();
+        }
     }
 
     void odom()
@@ -156,10 +238,10 @@ private:
         RCLCPP_INFO(this->get_logger(), "Distance A= %f....Distance B= %f....Distance Avg=%f....Orientation =%f", distance_A, distance_B, distance_Avg, delta_Orientation);
 
         // Average angle during last cycle
-        double cycleAngle = asin((distance_A - distance_B) / distance_btwn_wheels);
+        //double cycleAngle = asin((distance_A - distance_B) / distance_btwn_wheels);
 
         // Average angle during the last cycle
-        double avgAngle = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
+        //double avgAngle = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
 
         new_Orientation = old_Orientation + delta_Orientation;
 
@@ -174,7 +256,7 @@ private:
         old_Orientation = new_Orientation;
     }
 
-    std::vector<std::string> split(const std::string &s, char delimiter)
+    std::vector<std::string>split(const std::string &s, char delimiter)
     {
         std::vector<std::string> result;
         std::stringstream ss(s);

@@ -1,0 +1,11 @@
+[0.048s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[0.187s] [ 75%] [32mBuilding CXX object CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o[0m
+[0.187s] [ 75%] Built target Serial_node_1
+[0.569s] [01m[K/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/src/distance_Calculator.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: No such file or directory
+[0.569s]    11 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
+[0.569s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.569s] compilation terminated.
+[0.584s] gmake[2]: *** [CMakeFiles/Distance_Calculator.dir/build.make:76: CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o] Error 1
+[0.584s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Distance_Calculator.dir/all] Error 2
+[0.584s] gmake: *** [Makefile:146: all] Error 2
+[0.586s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8

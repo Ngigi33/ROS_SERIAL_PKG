@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(serial_cpp_pkg)
 
+
 # Add the path to libserial headers
 include_directories(/usr/include/libserial)
 
@@ -19,6 +20,10 @@ find_package(std_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(PkgConfig REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 pkg_check_modules(SERIAL libserial)
 
@@ -35,6 +40,11 @@ add_executable(Distance_Calculator src/distance_Calculator.cpp)
 ament_target_dependencies(Distance_Calculator rclcpp)
 ament_target_dependencies(Distance_Calculator rclcpp std_msgs)
 ament_target_dependencies(Distance_Calculator rclcpp example_interfaces)
+ament_target_dependencies(Distance_Calculator rclcpp nav_msgs)
+ament_target_dependencies(Distance_Calculator rclcpp geometry_msgs)
+ament_target_dependencies(Distance_Calculator rclcpp tf2)
+ament_target_dependencies(Distance_Calculator rclcpp tf2_ros)
+
 
 
 
