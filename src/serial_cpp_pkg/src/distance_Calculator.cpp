@@ -45,7 +45,7 @@ public:
 
 
         wheel_odom_sub_ = this->create_subscription<std_msgs::msg::String>("/distance_finder", 1, std::bind(&D_Calc::receive_Msg, this, std::placeholders::_1));
-        timer_ = this->create_wall_timer(std::chrono::microseconds(500), std::bind(&D_Calc::odom, this));
+        timer_ = this->create_wall_timer(std::chrono::microseconds(500), std::bind(&D_Calc::timer_callback, this));
     }
 
 private:
@@ -218,6 +218,8 @@ private:
 
     void timer_callback()
     {
+        set_initial_2D();
+        odom();
 
         if (initialPoseRecieved)
         {
