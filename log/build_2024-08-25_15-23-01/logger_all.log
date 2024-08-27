@@ -1,0 +1,205 @@
+[5.240s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[5.240s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x794112040640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x794112040040>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x794112040040>>)
+[6.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[6.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.731s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/einstein/Documents/serial_ws'
+[6.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[6.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[6.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[6.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[6.735s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[6.872s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extension 'ignore'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extension 'ignore_ament_install'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extensions ['colcon_pkg']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extension 'colcon_pkg'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extensions ['colcon_meta']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extension 'colcon_meta'
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extensions ['ros']
+[6.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_cpp_pkg) by extension 'ros'
+[6.896s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_cpp_pkg' with type 'ros.ament_cmake' and name 'serial_cpp_pkg'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extensions ['ignore', 'ignore_ament_install']
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extension 'ignore'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extension 'ignore_ament_install'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extensions ['colcon_pkg']
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extension 'colcon_pkg'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extensions ['colcon_meta']
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extension 'colcon_meta'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extensions ['ros']
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_launch_file) by extension 'ros'
+[6.913s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_launch_file' with type 'ros.ament_cmake' and name 'serial_launch_file'
+[6.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[6.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[6.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[6.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[6.913s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[7.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[7.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[7.287s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/einstein/Documents/gamepad_ws/install
+[7.288s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/einstein/Documents/SLAM_WS/install
+[7.288s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/einstein/Documents/serial_ws/install
+[7.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 387 installed packages in /opt/ros/humble
+[7.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[7.441s] Level 5:colcon.colcon_core.verb:set package 'serial_cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[7.442s] DEBUG:colcon.colcon_core.verb:Building package 'serial_cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg', 'merge_install': False, 'path': '/home/einstein/Documents/serial_ws/src/serial_cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_args' from command line to 'None'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_target' from command line to 'None'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_clean_cache' from command line to 'False'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_clean_first' from command line to 'False'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'cmake_force_configure' from command line to 'False'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'ament_cmake_args' from command line to 'None'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'catkin_cmake_args' from command line to 'None'
+[7.442s] Level 5:colcon.colcon_core.verb:set package 'serial_launch_file' build argument 'catkin_skip_building_tests' from command line to 'False'
+[7.442s] DEBUG:colcon.colcon_core.verb:Building package 'serial_launch_file' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/einstein/Documents/serial_ws/build/serial_launch_file', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/einstein/Documents/serial_ws/install/serial_launch_file', 'merge_install': False, 'path': '/home/einstein/Documents/serial_ws/src/serial_launch_file', 'symlink_install': False, 'test_result_base': None}
+[7.442s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[7.443s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[7.444s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/einstein/Documents/serial_ws/src/serial_cpp_pkg' with build type 'ament_cmake'
+[7.444s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/einstein/Documents/serial_ws/src/serial_cpp_pkg'
+[7.521s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[7.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/einstein/Documents/serial_ws/src/serial_launch_file' with build type 'ament_cmake'
+[7.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/einstein/Documents/serial_ws/src/serial_launch_file'
+[7.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[7.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+[8.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+[8.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file
+[8.297s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_launch_file)
+[8.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file
+[8.329s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file' for CMake module files
+[8.329s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file' for CMake config files
+[8.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_launch_file', 'cmake_prefix_path')
+[8.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.ps1'
+[8.334s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.dsv'
+[8.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.sh'
+[8.338s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/bin'
+[8.338s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/lib/pkgconfig/serial_launch_file.pc'
+[8.338s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/lib/python3.10/site-packages'
+[8.338s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/bin'
+[8.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.ps1'
+[8.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.dsv'
+[8.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.sh'
+[8.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.bash'
+[8.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.zsh'
+[8.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/einstein/Documents/serial_ws/install/serial_launch_file/share/colcon-core/packages/serial_launch_file)
+[8.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_launch_file)
+[8.383s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file' for CMake module files
+[8.384s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file' for CMake config files
+[8.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_launch_file', 'cmake_prefix_path')
+[8.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.ps1'
+[8.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.dsv'
+[8.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/hook/cmake_prefix_path.sh'
+[8.388s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/bin'
+[8.388s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/lib/pkgconfig/serial_launch_file.pc'
+[8.388s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/lib/python3.10/site-packages'
+[8.388s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_launch_file/bin'
+[8.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.ps1'
+[8.389s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.dsv'
+[8.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.sh'
+[8.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.bash'
+[8.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_launch_file/share/serial_launch_file/package.zsh'
+[8.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/einstein/Documents/serial_ws/install/serial_launch_file/share/colcon-core/packages/serial_launch_file)
+[8.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[8.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg
+[8.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_cpp_pkg)
+[8.806s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg' for CMake module files
+[8.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg
+[8.811s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg' for CMake config files
+[8.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_cpp_pkg', 'cmake_prefix_path')
+[8.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.ps1'
+[8.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.dsv'
+[8.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.sh'
+[8.813s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib'
+[8.814s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/bin'
+[8.814s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/pkgconfig/serial_cpp_pkg.pc'
+[8.814s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/python3.10/site-packages'
+[8.814s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/bin'
+[8.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.ps1'
+[8.815s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.dsv'
+[8.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.sh'
+[8.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.bash'
+[8.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.zsh'
+[8.816s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/colcon-core/packages/serial_cpp_pkg)
+[8.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_cpp_pkg)
+[8.834s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg' for CMake module files
+[8.834s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg' for CMake config files
+[8.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_cpp_pkg', 'cmake_prefix_path')
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.ps1'
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.dsv'
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/hook/cmake_prefix_path.sh'
+[8.836s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib'
+[8.836s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/bin'
+[8.836s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/pkgconfig/serial_cpp_pkg.pc'
+[8.836s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/python3.10/site-packages'
+[8.836s] Level 1:colcon.colcon_core.environment:checking '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/bin'
+[8.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.ps1'
+[8.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.dsv'
+[8.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.sh'
+[8.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.bash'
+[8.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.zsh'
+[8.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/colcon-core/packages/serial_cpp_pkg)
+[8.856s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.856s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.856s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.856s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.904s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.904s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.904s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.919s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.919s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/einstein/Documents/serial_ws/install/local_setup.ps1'
+[8.926s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/einstein/Documents/serial_ws/install/_local_setup_util_ps1.py'
+[8.931s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/einstein/Documents/serial_ws/install/setup.ps1'
+[8.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/einstein/Documents/serial_ws/install/local_setup.sh'
+[8.939s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/einstein/Documents/serial_ws/install/_local_setup_util_sh.py'
+[8.939s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/einstein/Documents/serial_ws/install/setup.sh'
+[8.942s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/einstein/Documents/serial_ws/install/local_setup.bash'
+[8.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/einstein/Documents/serial_ws/install/setup.bash'
+[8.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/einstein/Documents/serial_ws/install/local_setup.zsh'
+[8.962s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/einstein/Documents/serial_ws/install/setup.zsh'

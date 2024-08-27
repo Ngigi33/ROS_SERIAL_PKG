@@ -1,0 +1,4 @@
+Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_launch_file -- -j8 -l8
+Invoking command in '/home/einstein/Documents/serial_ws/build/serial_launch_file': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file
+Invoked command in '/home/einstein/Documents/serial_ws/build/serial_launch_file' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_launch_file

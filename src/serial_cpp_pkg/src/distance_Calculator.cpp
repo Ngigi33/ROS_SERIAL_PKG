@@ -20,7 +20,7 @@ using namespace std;
 class D_Calc : public rclcpp::Node
 {
 public:
-    D_Calc() : Node("Distance_Calculator_Node") // Create a node with name stated
+    D_Calc() : Node("Distance_Calculator_Node_1") // Create a node with name stated
     {
 
         // Set the data fields of the odometry message
@@ -34,15 +34,17 @@ public:
         odomNew.twist.twist.angular.x = 0;
         odomNew.twist.twist.angular.y = 0;
         odomNew.twist.twist.angular.z = 0;
-        odomOld.pose.pose.position.x = old_X;
-        odomOld.pose.pose.position.y = old_Y;
-        odomOld.pose.pose.orientation.z = old_Orientation;
+        odomOld.pose.pose.position.x = 0;
+        odomOld.pose.pose.position.y = 0;
+        odomOld.pose.pose.orientation.z = 0;
 
-                // Publishers
+        // set_initial_2D();
+
+        // Publishers
         odom_data_pub = this->create_publisher<nav_msgs::msg::Odometry>("odom_data_euler", 100);
         odom_data_pub_quat = this->create_publisher<nav_msgs::msg::Odometry>("odom_data_quat", 100);
 
-
+        RCLCPP_INFO(this->get_logger(), "looping......");
 
         wheel_odom_sub_ = this->create_subscription<std_msgs::msg::String>("/distance_finder", 1, std::bind(&D_Calc::receive_Msg, this, std::placeholders::_1));
         timer_ = this->create_wall_timer(std::chrono::microseconds(500), std::bind(&D_Calc::timer_callback, this));
@@ -69,7 +71,6 @@ private:
     double delta_Orientation;
     double new_Orientation;
     double old_Orientation = 0.00000000001;
-
     double PI = 3.141592;
 
     // Flag to see if initial pose has been received
@@ -84,9 +85,9 @@ private:
 
     void set_initial_2D()
     {
-        odomOld.pose.pose.position.x = new_X;
-        odomOld.pose.pose.position.y = new_Y;
-        odomOld.pose.pose.orientation.z = new_Orientation;
+        odomOld.pose.pose.position.x = delta_X;
+        odomOld.pose.pose.position.y = delta_Y;
+        odomOld.pose.pose.orientation.z = delta_Orientation;
         initialPoseRecieved = true;
     }
 
@@ -173,7 +174,6 @@ private:
         {
             avgAngle += 2 * PI;
         }
-      
 
         // Calculate the new pose (x, y, and theta)
         odomNew.pose.pose.position.x = odomOld.pose.pose.position.x + cos(avgAngle) * distance_Avg;
@@ -218,12 +218,11 @@ private:
 
     void timer_callback()
     {
-        set_initial_2D();
         odom();
+        set_initial_2D();
 
         if (initialPoseRecieved)
         {
-
             update_odom();
             publish_Quaternion();
         }
@@ -234,21 +233,19 @@ private:
         distance_A = Distance_Calculation(rot_A);
         distance_B = Distance_Calculation(rot_B);
 
-        distance_Avg = ((distance_A + distance_B) / 2.0);
+        distance_Avg = ((abs(distance_A) + abs(distance_B)) / 2.0);
 
-        delta_Orientation = ((distance_A - distance_B) / distance_btwn_wheels);
-        RCLCPP_INFO(this->get_logger(), "Distance A= %f....Distance B= %f....Distance Avg=%f....Orientation =%f", distance_A, distance_B, distance_Avg, delta_Orientation);
+        delta_Orientation = ((distance_B - distance_A) / distance_btwn_wheels);
+        // RCLCPP_INFO(this->get_logger(), "Distance A= %f....Distance B= %f....Distance Avg=%f....Orientation =%f", distance_A, distance_B, distance_Avg, delta_Orientation);
 
-        // Average angle during last cycle
-        //double cycleAngle = asin((distance_A - distance_B) / distance_btwn_wheels);
+        // Average angle during last cycle double cycleAngle = asin((distance_A - distance_B) / distance_btwn_wheels);
 
-        // Average angle during the last cycle
-        //double avgAngle = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
+        // Average angle during the last cycle double avgAngle = cycleAngle / 2 + odomOld.pose.pose.orientation.z;
 
         new_Orientation = old_Orientation + delta_Orientation;
 
-        delta_X = distance_Avg * cos(new_Orientation);
-        delta_Y = distance_Avg * sin(new_Orientation);
+        delta_X = distance_Avg * cos(delta_Orientation);
+        delta_Y = distance_Avg * sin(delta_Orientation);
 
         new_X = old_X + delta_X;
         new_Y = old_Y + delta_Y;
@@ -256,9 +253,11 @@ private:
         old_X = new_X;
         old_Y = new_Y;
         old_Orientation = new_Orientation;
+
+        RCLCPP_INFO(this->get_logger(), "X= %f....Y= %f....Distance Avg=%f....Orientation =%f", delta_X, delta_Y, distance_Avg, delta_Orientation);
     }
 
-    std::vector<std::string>split(const std::string &s, char delimiter)
+    std::vector<std::string> split(const std::string &s, char delimiter)
     {
         std::vector<std::string> result;
         std::stringstream ss(s);

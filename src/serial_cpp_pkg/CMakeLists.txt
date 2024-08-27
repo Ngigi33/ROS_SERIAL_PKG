@@ -45,6 +45,9 @@ ament_target_dependencies(Distance_Calculator rclcpp geometry_msgs)
 ament_target_dependencies(Distance_Calculator rclcpp tf2)
 ament_target_dependencies(Distance_Calculator rclcpp tf2_ros)
 
+add_executable(RPM src/rpm_editor.cpp)
+ament_target_dependencies(RPM rclcpp)
+ament_target_dependencies(RPM rclcpp std_msgs)
 
 
 
@@ -72,6 +75,7 @@ ament_target_dependencies(Distance_Calculator rclcpp tf2_ros)
 install(TARGETS
 Serial_node_1
 Distance_Calculator
+RPM
 DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -1,0 +1,28 @@
+[0.010s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target Distance_Calculator[0m
+[0.050s] [ 50%] Built target Serial_node_1
+[0.054s] [ 75%] [32mBuilding CXX object CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.o[0m
+[2.097s] [100%] [32m[1mLinking CXX executable Distance_Calculator[0m
+[2.188s] [100%] Built target Distance_Calculator
+[2.201s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/einstein/Documents/serial_ws/build/serial_cpp_pkg -- -j8 -l8
+[2.223s] Invoking command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg
+[2.228s] -- Install configuration: ""
+[2.229s] -- Execute custom install script
+[2.229s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Serial_node_1
+[2.229s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/lib/serial_cpp_pkg/Distance_Calculator
+[2.229s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/serial_cpp_pkg
+[2.229s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/serial_cpp_pkg
+[2.229s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.sh
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/ament_prefix_path.dsv
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.sh
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/environment/path.dsv
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.bash
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.sh
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.zsh
+[2.230s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/local_setup.dsv
+[2.230s] -- Symlinking: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.dsv
+[2.237s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/ament_index/resource_index/packages/serial_cpp_pkg
+[2.237s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig.cmake
+[2.237s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/cmake/serial_cpp_pkgConfig-version.cmake
+[2.237s] -- Up-to-date symlink: /home/einstein/Documents/serial_ws/install/serial_cpp_pkg/share/serial_cpp_pkg/package.xml
+[2.239s] Invoked command in '/home/einstein/Documents/serial_ws/build/serial_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/einstein/Documents/serial_ws/build/serial_cpp_pkg

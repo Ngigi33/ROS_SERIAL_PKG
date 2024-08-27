@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ddfcc4a3b2cb376136d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "serial_cpp_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Distance_Calculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Distance_Calculator-Debug-bd4cee8628583631fab8.json",
+					"name" : "Distance_Calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RPM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RPM-Debug-13f275c9b706d0cf5973.json",
+					"name" : "RPM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Serial_node_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Serial_node_1-Debug-27f029c75a4d84e7ae79.json",
+					"name" : "Serial_node_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_cpp_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_cpp_pkg_uninstall-Debug-c2a05630cb42f6ad458c.json",
+					"name" : "serial_cpp_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-4e86b0914b8438a19dd2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/einstein/Documents/serial_ws/src/serial_cpp_pkg/build",
+		"source" : "/home/einstein/Documents/serial_ws/src/serial_cpp_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

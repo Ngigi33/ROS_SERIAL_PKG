@@ -223,6 +223,19 @@ Distance_Calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/build
 .PHONY : Distance_Calculator/fast
 
+#=============================================================================
+# Target rules for targets named RPM
+
+# Build rule for target.
+RPM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RPM
+.PHONY : RPM
+
+# fast build rule for target.
+RPM/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPM.dir/build.make CMakeFiles/RPM.dir/build
+.PHONY : RPM/fast
+
 src/distance_Calculator.o: src/distance_Calculator.cpp.o
 .PHONY : src/distance_Calculator.o
 
@@ -246,6 +259,30 @@ src/distance_Calculator.s: src/distance_Calculator.cpp.s
 src/distance_Calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Distance_Calculator.dir/build.make CMakeFiles/Distance_Calculator.dir/src/distance_Calculator.cpp.s
 .PHONY : src/distance_Calculator.cpp.s
+
+src/rpm_editor.o: src/rpm_editor.cpp.o
+.PHONY : src/rpm_editor.o
+
+# target to build an object file
+src/rpm_editor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPM.dir/build.make CMakeFiles/RPM.dir/src/rpm_editor.cpp.o
+.PHONY : src/rpm_editor.cpp.o
+
+src/rpm_editor.i: src/rpm_editor.cpp.i
+.PHONY : src/rpm_editor.i
+
+# target to preprocess a source file
+src/rpm_editor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPM.dir/build.make CMakeFiles/RPM.dir/src/rpm_editor.cpp.i
+.PHONY : src/rpm_editor.cpp.i
+
+src/rpm_editor.s: src/rpm_editor.cpp.s
+.PHONY : src/rpm_editor.s
+
+# target to generate assembly for a file
+src/rpm_editor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RPM.dir/build.make CMakeFiles/RPM.dir/src/rpm_editor.cpp.s
+.PHONY : src/rpm_editor.cpp.s
 
 src/serial_node.o: src/serial_node.cpp.o
 .PHONY : src/serial_node.o
@@ -287,10 +324,14 @@ help:
 	@echo "... serial_cpp_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... Distance_Calculator"
+	@echo "... RPM"
 	@echo "... Serial_node_1"
 	@echo "... src/distance_Calculator.o"
 	@echo "... src/distance_Calculator.i"
 	@echo "... src/distance_Calculator.s"
+	@echo "... src/rpm_editor.o"
+	@echo "... src/rpm_editor.i"
+	@echo "... src/rpm_editor.s"
 	@echo "... src/serial_node.o"
 	@echo "... src/serial_node.i"
 	@echo "... src/serial_node.s"
